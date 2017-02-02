@@ -34,7 +34,10 @@ public class main {
             System.out.println("Roll " + theRoll + ":");
             for (int i = 0; i < 2; i++) {
                 int randNum = rn.nextInt(numSides) + 1;
+                // int randNum2 = (int) Math.random() * (numSides)+1;
+
                 System.out.println(randNum);
+
                 if (i == 0 && randNum == 1) {
                     isSnake = true;
                 }
@@ -75,6 +78,9 @@ public class main {
 
             if (rollAgain == 'n' || rollAgain == 'N') {
                 break; 
+            }
+            else {
+                theRoll += 1;                
             }
         }
     }
